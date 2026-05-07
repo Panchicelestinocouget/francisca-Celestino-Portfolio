@@ -5,11 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Francisca Celestino, Marketing Portfolio</title>
 <meta name="description" content="Marketing portfolio of Francisca Celestino. From AB InBev draftLine and L'Oréal Paris to founding marketing functions at B2B and AgTech startups." />
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
 <style>
 :root {
   --teal: #2A9D8F;
@@ -25,7 +23,6 @@
   --gutter: clamp(20px, 4vw, 48px);
   --radius: 6px;
 }
-
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -47,7 +44,6 @@ body {
   background-size: cover;
   min-height: 100vh;
 }
-
 body::before {
   content: '';
   position: fixed; inset: 0;
@@ -56,7 +52,6 @@ body::before {
   opacity: 0.6;
   z-index: 1;
 }
-
 /* type */
 h1, h2, h3, h4 { margin: 0; line-height: 1.15; letter-spacing: -0.02em; }
 h1 { font-weight: 900; font-size: clamp(54px, 9vw, 120px); letter-spacing: -0.04em; }
@@ -67,10 +62,8 @@ p { margin: 0 0 1em 0; color: var(--ink-soft); }
 a { color: var(--teal); text-underline-offset: 3px; }
 a:hover { color: var(--teal-deep); }
 .eyebrow { font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--teal); }
-
 /* layout */
 .container { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); position: relative; z-index: 2; }
-
 /* download CV button (top right) */
 .cv-pin {
   position: fixed;
@@ -89,7 +82,6 @@ a:hover { color: var(--teal-deep); }
 @media (max-width: 720px) {
   .cv-pin { top: 12px; right: 12px; padding: 8px 14px; font-size: 12px; }
 }
-
 /* hero */
 .hero {
   padding: 88px var(--gutter) 56px;
@@ -117,7 +109,6 @@ a:hover { color: var(--teal-deep); }
 .hero .meta a { color: white; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.4); padding-bottom: 1px; }
 .hero .meta a:hover { border-bottom-color: white; }
 .hero .meta .dot { color: rgba(255,255,255,0.5); }
-
 /* card sheet */
 .sheet {
   background: var(--card);
@@ -138,7 +129,6 @@ a:hover { color: var(--teal-deep); }
 }
 .sheet-head h2 { max-width: 720px; }
 .sheet-head .aside { color: var(--muted); font-size: 14px; max-width: 320px; line-height: 1.5; }
-
 /* stats */
 .stats-grid {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
@@ -168,7 +158,6 @@ a:hover { color: var(--teal-deep); }
   .stat:nth-last-child(-n+3) { border-bottom: 1px solid var(--line); }
   .stat:nth-last-child(-n+2) { border-bottom: none; }
 }
-
 /* principles */
 .principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .principle {
@@ -181,7 +170,6 @@ a:hover { color: var(--teal-deep); }
 .principle h4 { color: var(--ink); font-size: 15px; text-transform: none; letter-spacing: -0.01em; margin: 8px 0 10px; font-weight: 700; }
 .principle p { font-size: 14px; line-height: 1.55; color: var(--ink-soft); margin: 0; }
 @media (max-width: 720px) { .principles { grid-template-columns: 1fr; } }
-
 /* timeline */
 .tl {
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
@@ -208,7 +196,6 @@ a:hover { color: var(--teal-deep); }
   .tl-item:nth-child(2) { border-right: none; }
   .tl-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
 }
-
 /* filters */
 .filter-section .head-block { margin-bottom: 20px; }
 .chips {
@@ -229,7 +216,6 @@ a:hover { color: var(--teal-deep); }
 .filter-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); margin-right: 4px; }
 .expand-all { font-family: inherit; font-size: 12px; font-weight: 600; padding: 7px 14px; border-radius: 100px; border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; margin-left: auto; }
 .expand-all:hover { color: var(--teal); border-color: var(--teal); }
-
 /* cases */
 .cases { padding: 0; }
 .case {
@@ -262,7 +248,7 @@ a:hover { color: var(--teal-deep); }
 .case .case-meta { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
 .case .case-brand { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); }
 .case .case-title { font-weight: 700; font-size: 17px; color: var(--ink); line-height: 1.35; letter-spacing: -0.01em; }
-.case .case-tags { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; justify-content: flex-end; }
+.case .case-tags { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; justify-content: flex-end; max-width: 260px; }
 .case .stag {
   font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;
   padding: 4px 9px; border-radius: 100px; white-space: nowrap;
@@ -279,10 +265,11 @@ a:hover { color: var(--teal-deep); }
 .case .stag.agro      { background: #DCFCE7; color: #15803D; }
 .case .stag.software  { background: #DBEAFE; color: #1E40AF; }
 .case .stag.wellness  { background: #CCFBF1; color: #115E59; }
-/* type & innovation */
+/* type & innovation & ops */
 .case .stag.creative  { background: #FFE8D9; color: #9A3412; }
 .case .stag.strategy  { background: #C5E5DE; color: #1F6F66; }
 .case .stag.innov     { background: #FCE7F3; color: #BE185D; }
+.case .stag.ops       { background: #E0F2FE; color: #0369A1; }
 .case .case-arrow {
   width: 28px; height: 28px; border-radius: 50%; background: var(--teal-soft);
   display: flex; align-items: center; justify-content: center;
@@ -298,12 +285,10 @@ a:hover { color: var(--teal-deep); }
   .case .case-tags { grid-column: 1 / -1; margin-top: 4px; justify-content: flex-start; }
   .case .case-arrow { position: absolute; top: 18px; right: 20px; }
 }
-
 /* case body */
 .case-body { padding: 28px; }
-.case-body .summary-line { font-size: 17px; line-height: 1.55; color: var(--ink); margin-bottom: 24px; max-width: 720px; }
-.case-body .summary-line em { color: var(--teal); font-style: italic; font-weight: 500; }
-
+.case-body .summary-line { font-size: 17px; line-height: 1.55; color: var(--teal); margin-bottom: 24px; max-width: 720px; font-weight: 500; }
+.case-body .summary-line em { color: var(--teal-deep); font-style: italic; font-weight: 600; }
 /* video thumbnail link, opens YouTube in new tab (avoids embed restrictions) */
 .video {
   position: relative; padding-top: 28.125%; /* half of 56.25% = quarter area visually */
@@ -317,7 +302,7 @@ a:hover { color: var(--teal-deep); }
   box-shadow: 0 4px 16px -8px rgba(0,0,0,0.4);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.video.shorts { padding-top: 88.89%; max-width: 240px; }
+.video.shorts { padding-top: 177.78%; max-width: 160px; }
 .video::before {
   /* enforce 16:9 within max-width by scaling padding properly */
   content: ''; display: block;
@@ -352,7 +337,14 @@ a:hover { color: var(--teal-deep); }
   color: var(--muted); text-decoration: none; font-weight: 500;
 }
 .yt-link:hover { color: var(--teal); }
-
+/* local-file video (HTML5 player) */
+.video.local { cursor: default; padding-top: 0; max-width: 240px; background: transparent; box-shadow: none; }
+.video.local video {
+  width: 100%; display: block; border-radius: 8px;
+  background: #000; aspect-ratio: 9 / 16; object-fit: cover;
+  box-shadow: 0 4px 16px -8px rgba(0,0,0,0.4);
+}
+.video.local:hover { transform: none; box-shadow: none; }
 .case-body .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
 .case-body .grid > .full { grid-column: 1 / -1; }
 .case-body h4 { color: var(--teal); margin-bottom: 8px; }
@@ -395,7 +387,6 @@ a:hover { color: var(--teal-deep); }
   .case-body .results { grid-template-columns: 1fr 1fr; }
   .case-body .mockups { grid-template-columns: 1fr 1fr; }
 }
-
 /* footer */
 .footer-card { margin-bottom: 88px; }
 .footer-card h2 { color: var(--ink); max-width: 640px; }
@@ -406,13 +397,11 @@ a:hover { color: var(--teal-deep); }
 </style>
 </head>
 <body>
-
 <!-- Download CV pinned button -->
 <a class="cv-pin" href="Francisca-Celestino-CV.pdf" download>
   <svg viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 1.5a.5.5 0 0 1 .5.5v8.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.793V2a.5.5 0 0 1 .5-.5zM3 13.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"/></svg>
   Download CV
 </a>
-
 <!-- HERO -->
 <header class="hero">
   <h1>
@@ -432,13 +421,11 @@ a:hover { color: var(--teal-deep); }
     <a href="https://www.linkedin.com/in/franciscacelestino" target="_blank" rel="noopener">LinkedIn →</a>
   </div>
 </header>
-
 <!-- STATS -->
 <section class="sheet">
   <div class="sheet-head">
     <h2>Some numbers I'm proud of.</h2>
   </div>
-
   <div class="stats-grid">
     <div class="stat">
       <div class="num"><em>7</em></div>
@@ -472,14 +459,12 @@ a:hover { color: var(--teal-deep); }
     </div>
   </div>
 </section>
-
 <!-- APPROACH -->
 <section class="sheet">
   <div class="sheet-head">
     <h2>How I think about the work.</h2>
     <div class="aside">Three habits I take into every team.</div>
   </div>
-
   <div class="principles">
     <div class="principle">
       <div class="num">01</div>
@@ -498,14 +483,12 @@ a:hover { color: var(--teal-deep); }
     </div>
   </div>
 </section>
-
 <!-- CAREER -->
 <section class="sheet">
   <div class="sheet-head">
     <h2>My career.</h2>
     <div class="aside">Nine years: CPG (beauty and beer) across challenging Latin American markets, plus B2B software and AgTech startups in San Francisco.</div>
   </div>
-
   <div class="tl">
     <a class="tl-item" href="https://www.loreal.com/en/" target="_blank" rel="noopener">
       <div class="yr">2017 / 2019</div>
@@ -533,36 +516,33 @@ a:hover { color: var(--teal-deep); }
     </a>
   </div>
 </section>
-
 <!-- FILTER + CASES -->
 <section class="sheet filter-section">
   <div class="sheet-head head-block">
     <h2>Case studies.</h2>
     <div class="aside">14 selected projects in chronological order. Click any title to expand. Filter by brand or by type, one filter at a time.</div>
   </div>
-
   <div style="margin-bottom: 6px;">
     <div class="chips" id="brand-chips">
       <span class="filter-label">Brand</span>
-      <button class="chip active" data-filter-key="all" data-filter-value="all">All <span class="count">14</span></button>
-      <button class="chip" data-filter-key="brand" data-filter-value="loreal">L'Oréal <span class="count">2</span></button>
-      <button class="chip" data-filter-key="brand" data-filter-value="abinbev">AB InBev / draftLine <span class="count">10</span></button>
-      <button class="chip" data-filter-key="brand" data-filter-value="amalgama">Amalgama <span class="count">1</span></button>
-      <button class="chip" data-filter-key="brand" data-filter-value="upterra">UpTerra <span class="count">1</span></button>
+      <button class="chip active" data-filter-key="all" data-filter-value="all">All</button>
+      <button class="chip" data-filter-key="brand" data-filter-value="loreal">L'Oréal</button>
+      <button class="chip" data-filter-key="brand" data-filter-value="abinbev">AB InBev / draftLine</button>
+      <button class="chip" data-filter-key="brand" data-filter-value="amalgama">Amalgama</button>
+      <button class="chip" data-filter-key="brand" data-filter-value="upterra">UpTerra</button>
     </div>
   </div>
   <div>
     <div class="chips" id="type-chips">
       <span class="filter-label">Type</span>
-      <button class="chip" data-filter-key="type" data-filter-value="creativity">Creativity</button>
-      <button class="chip" data-filter-key="type" data-filter-value="strategy">Strategy</button>
+      <button class="chip" data-filter-key="type" data-filter-value="creativity">Brand &amp; Creative</button>
+      <button class="chip" data-filter-key="type" data-filter-value="strategy">Growth &amp; Strategy</button>
+      <button class="chip" data-filter-key="type" data-filter-value="ops">Mkt Operations</button>
       <button class="expand-all" id="toggle-all">Expand all ↓</button>
     </div>
   </div>
 </section>
-
 <div class="cases" id="cases">
-
   <!-- 1: Elvive Reparación -->
   <details class="case" data-brand="loreal" data-type="creativity">
     <summary>
@@ -572,7 +552,7 @@ a:hover { color: var(--teal-deep); }
         <span class="case-title">Reparación Total | local production with Luisana Lopilato</span>
       </div>
       <div class="case-tags">
-        <span class="stag creative">Creativity</span>
+        <span class="stag creative">Brand &amp; Creative</span>
         <span class="stag cpg">CPG</span>
         <span class="stag dtc">DTC</span>
         <span class="stag beauty">Beauty</span>
@@ -602,7 +582,6 @@ a:hover { color: var(--teal-deep); }
       </div>
     </div>
   </details>
-
   <!-- 2: Elvive Óleo -->
   <details class="case" data-brand="loreal" data-type="creativity">
     <summary>
@@ -612,7 +591,7 @@ a:hover { color: var(--teal-deep); }
         <span class="case-title">Óleo Extraordinario | translating global film for vertical, social-first</span>
       </div>
       <div class="case-tags">
-        <span class="stag creative">Creativity</span>
+        <span class="stag creative">Brand &amp; Creative</span>
         <span class="stag cpg">CPG</span>
         <span class="stag dtc">DTC</span>
         <span class="stag beauty">Beauty</span>
@@ -638,9 +617,8 @@ a:hover { color: var(--teal-deep); }
       </div>
     </div>
   </details>
-
   <!-- 3: Brahma Norte regional -->
-  <details class="case" data-brand="abinbev" data-type="strategy">
+  <details class="case" data-brand="abinbev" data-type="strategy ops">
     <summary>
       <span class="case-yr">2019 / 2020</span>
       <div class="case-meta">
@@ -648,7 +626,8 @@ a:hover { color: var(--teal-deep); }
         <span class="case-title">Building 6 regional marketing teams across Argentina</span>
       </div>
       <div class="case-tags">
-        <span class="stag strategy">Strategy</span>
+        <span class="stag strategy">Growth &amp; Strategy</span>
+        <span class="stag ops">Mkt Operations</span>
         <span class="stag cpg">CPG</span>
         <span class="stag fb">Food &amp; Beverage</span>
         <span class="case-arrow">+</span>
@@ -675,7 +654,6 @@ a:hover { color: var(--teal-deep); }
       </div>
     </div>
   </details>
-
   <!-- 4: Brahma Stickers -->
   <details class="case" data-brand="abinbev" data-type="creativity">
     <summary>
@@ -685,7 +663,7 @@ a:hover { color: var(--teal-deep); }
         <span class="case-title">"Una idea para cuidarnos" | a beer label as public-health gesture</span>
       </div>
       <div class="case-tags">
-        <span class="stag creative">Creativity</span>
+        <span class="stag creative">Brand &amp; Creative</span>
         <span class="stag cpg">CPG</span>
         <span class="stag fb">Food &amp; Beverage</span>
         <span class="case-arrow">+</span>
@@ -713,7 +691,6 @@ a:hover { color: var(--teal-deep); }
       </div>
     </div>
   </details>
-
   <!-- 5: Coronita -->
   <details class="case" data-brand="abinbev" data-type="strategy creativity">
     <summary>
@@ -723,8 +700,8 @@ a:hover { color: var(--teal-deep); }
         <span class="case-title">Coronita | a smaller bottle for a smaller wallet</span>
       </div>
       <div class="case-tags">
-        <span class="stag strategy">Strategy</span>
-        <span class="stag creative">Creativity</span>
+        <span class="stag strategy">Growth &amp; Strategy</span>
+        <span class="stag creative">Brand &amp; Creative</span>
         <span class="stag cpg">CPG</span>
         <span class="stag fb">Food &amp; Beverage</span>
         <span class="case-arrow">+</span>
@@ -732,6 +709,9 @@ a:hover { color: var(--teal-deep); }
     </summary>
     <div class="case-body">
       <p class="summary-line">The Argentine market was beaten down. People couldn't afford to pay more, so we made the beer smaller. Coronita, a smaller-format bottle that lowered out-of-pocket cost without lowering the brand. Since we couldn't shoot the new product (no production crews on set), we built the entire launch in illustration.</p>
+      <div class="video local">
+        <video src="coronita-relax-a-little.mp4" controls preload="metadata" playsinline></video>
+      </div>
       <div class="grid">
         <div>
           <h4>Brief / Constraint</h4>
@@ -747,7 +727,6 @@ a:hover { color: var(--teal-deep); }
       </div>
     </div>
   </details>
-
   <!-- 6: Viajes con Conexión -->
   <details class="case" data-brand="abinbev" data-type="creativity">
     <summary>
@@ -757,7 +736,7 @@ a:hover { color: var(--teal-deep); }
         <span class="case-title">Viajes con Conexión | when "go outside" isn't allowed, find a cause</span>
       </div>
       <div class="case-tags">
-        <span class="stag creative">Creativity</span>
+        <span class="stag creative">Brand &amp; Creative</span>
         <span class="stag cpg">CPG</span>
         <span class="stag dtc">DTC</span>
         <span class="stag fb">Food &amp; Beverage</span>
@@ -791,9 +770,8 @@ a:hover { color: var(--teal-deep); }
       </div>
     </div>
   </details>
-
   <!-- 7: Corona Sunsets -->
-  <details class="case" data-brand="abinbev" data-type="creativity">
+  <details class="case" data-brand="abinbev" data-type="creativity ops">
     <summary>
       <span class="case-yr">2021</span>
       <div class="case-meta">
@@ -801,7 +779,8 @@ a:hover { color: var(--teal-deep); }
         <span class="case-title">Corona Sunsets | first post-pandemic event</span>
       </div>
       <div class="case-tags">
-        <span class="stag creative">Creativity</span>
+        <span class="stag creative">Brand &amp; Creative</span>
+        <span class="stag ops">Mkt Operations</span>
         <span class="stag cpg">CPG</span>
         <span class="stag fb">Food &amp; Beverage</span>
         <span class="case-arrow">+</span>
@@ -830,7 +809,6 @@ a:hover { color: var(--teal-deep); }
       </div>
     </div>
   </details>
-
   <!-- 8: Budweiser 710 -->
   <details class="case" data-brand="abinbev" data-type="creativity">
     <summary>
@@ -840,7 +818,7 @@ a:hover { color: var(--teal-deep); }
         <span class="case-title">Budweiser 710 | rebuilding a brand the competition had bastardized</span>
       </div>
       <div class="case-tags">
-        <span class="stag creative">Creativity</span>
+        <span class="stag creative">Brand &amp; Creative</span>
         <span class="stag cpg">CPG</span>
         <span class="stag fb">Food &amp; Beverage</span>
         <span class="case-arrow">+</span>
@@ -867,7 +845,6 @@ a:hover { color: var(--teal-deep); }
       </div>
     </div>
   </details>
-
   <!-- 9: Paso de los Toros -->
   <details class="case" data-brand="abinbev" data-type="creativity">
     <summary>
@@ -877,7 +854,7 @@ a:hover { color: var(--teal-deep); }
         <span class="case-title">"Cortá con tanta dulzura" | brand attribute as pandemic commentary</span>
       </div>
       <div class="case-tags">
-        <span class="stag creative">Creativity</span>
+        <span class="stag creative">Brand &amp; Creative</span>
         <span class="stag cpg">CPG</span>
         <span class="stag fb">Food &amp; Beverage</span>
         <span class="case-arrow">+</span>
@@ -911,7 +888,6 @@ a:hover { color: var(--teal-deep); }
       </div>
     </div>
   </details>
-
   <!-- 10: 7Up Fido Dido -->
   <details class="case" data-brand="abinbev" data-type="creativity">
     <summary>
@@ -921,7 +897,7 @@ a:hover { color: var(--teal-deep); }
         <span class="case-title">Bringing Fido Dido back | a renegotiated IP, then turning the city into a 7Up channel</span>
       </div>
       <div class="case-tags">
-        <span class="stag creative">Creativity</span>
+        <span class="stag creative">Brand &amp; Creative</span>
         <span class="stag cpg">CPG</span>
         <span class="stag fb">Food &amp; Beverage</span>
         <span class="case-arrow">+</span>
@@ -954,9 +930,8 @@ a:hover { color: var(--teal-deep); }
       </div>
     </div>
   </details>
-
   <!-- 11A: Capabilities -->
-  <details class="case" data-brand="abinbev" data-type="strategy">
+  <details class="case" data-brand="abinbev" data-type="strategy ops">
     <summary>
       <span class="case-yr">2020 / 2022</span>
       <div class="case-meta">
@@ -964,7 +939,8 @@ a:hover { color: var(--teal-deep); }
         <span class="case-title">Marketing Capabilities | a talent flywheel to attract better work</span>
       </div>
       <div class="case-tags">
-        <span class="stag strategy">Strategy</span>
+        <span class="stag strategy">Growth &amp; Strategy</span>
+        <span class="stag ops">Mkt Operations</span>
         <span class="stag cpg">CPG</span>
         <span class="stag fb">Food &amp; Beverage</span>
         <span class="case-arrow">+</span>
@@ -991,9 +967,8 @@ a:hover { color: var(--teal-deep); }
       </div>
     </div>
   </details>
-
   <!-- 11B: Creative Excellence -->
-  <details class="case" data-brand="abinbev" data-type="strategy">
+  <details class="case" data-brand="abinbev" data-type="strategy ops">
     <summary>
       <span class="case-yr">2020 / 2022</span>
       <div class="case-meta">
@@ -1001,7 +976,8 @@ a:hover { color: var(--teal-deep); }
         <span class="case-title">Creative Excellence | frameworks, agile, and external pressure-testing</span>
       </div>
       <div class="case-tags">
-        <span class="stag strategy">Strategy</span>
+        <span class="stag strategy">Growth &amp; Strategy</span>
+        <span class="stag ops">Mkt Operations</span>
         <span class="stag cpg">CPG</span>
         <span class="stag fb">Food &amp; Beverage</span>
         <span class="case-arrow">+</span>
@@ -1021,9 +997,8 @@ a:hover { color: var(--teal-deep); }
       </div>
     </div>
   </details>
-
   <!-- 12: Amalgama -->
-  <details class="case" data-brand="amalgama" data-type="strategy">
+  <details class="case" data-brand="amalgama" data-type="strategy ops">
     <summary>
       <span class="case-yr">2022 / 2024</span>
       <div class="case-meta">
@@ -1031,7 +1006,8 @@ a:hover { color: var(--teal-deep); }
         <span class="case-title">Amalgama | wellness software in a high-trust, low-budget category</span>
       </div>
       <div class="case-tags">
-        <span class="stag strategy">Strategy</span>
+        <span class="stag strategy">Growth &amp; Strategy</span>
+        <span class="stag ops">Mkt Operations</span>
         <span class="stag startup">Startup</span>
         <span class="stag software">Software</span>
         <span class="stag wellness">Wellness</span>
@@ -1061,9 +1037,8 @@ a:hover { color: var(--teal-deep); }
       </div>
     </div>
   </details>
-
   <!-- 13: UpTerra -->
-  <details class="case" data-brand="upterra" data-type="strategy">
+  <details class="case" data-brand="upterra" data-type="strategy ops">
     <summary>
       <span class="case-yr">2024 / Now</span>
       <div class="case-meta">
@@ -1071,7 +1046,8 @@ a:hover { color: var(--teal-deep); }
         <span class="case-title">UpTerra | founded high-performance marketing engine from the ground up</span>
       </div>
       <div class="case-tags">
-        <span class="stag strategy">Strategy</span>
+        <span class="stag strategy">Growth &amp; Strategy</span>
+        <span class="stag ops">Mkt Operations</span>
         <span class="stag startup">Startup</span>
         <span class="stag tech">Tech</span>
         <span class="stag agro">Agro</span>
@@ -1086,30 +1062,22 @@ a:hover { color: var(--teal-deep); }
         <span class="play-btn"></span>
         <span class="yt-tag">YouTube ↗</span>
       </a>
-      <div class="grid">
-          <h4>What I built</h4>
-          <p>Infrastructure: Full stack deployment (HubSpot, GA4) and website redesign optimized for a high-friction B2B sales cycle. Go-To-Market: Designed and executed the entry strategy for the Mexican market, including localized content and sales enablement. Demand Stack: Managed a multi-channel engine (SEO, Paid, PR, TikTok, Events) and led a multidisciplinary team of 5, plus agency partners. Sales-Marketing Alignment: Developed lead scoring and sales collateral that shortened the feedback loop between marketing and revenue.</p>
-        </div>
-        <div class="full">
-          <div class="results">
-            <div><div class="num">2,000+</div><div class="lab">B2B contacts in &lt;8 months</div></div>
-            <div><div class="num">259%</div><div class="lab">YoY website traffic</div></div>
-            <div><div class="num">500+</div><div class="lab">Qualified leads, 25.7% sales-ready</div></div>
-            <div><div class="num">29 / 13</div><div class="lab">% Email open / CTR, sustained</div></div>
-            <div><div class="num">+224%</div><div class="lab">LinkedIn organic</div></div>
-          </div>
-        </div>
-        <div class="full">
-          <h4>Where the strategy lives</h4>
-          <p>The decisions that drove the numbers are upstream: which market to enter first, which agencies to hire and which to insource, which channel to over-invest in given the buyer profile, how to design lead scoring so Sales actually trusts the handoff, what content compounds in SEO vs. what burns budget on a campaign.</p>
-          <a class="ext" href="https://upterra.co/results/" target="_blank" rel="noopener">See the live results page →</a>
-        </div>
+      <h4>What I built</h4>
+      <p>Infrastructure: Full stack deployment (HubSpot, GA4) and website redesign optimized for a high-friction B2B sales cycle. Go-To-Market: Designed and executed the entry strategy for the Mexican market, including localized content and sales enablement. Demand Stack: Managed a multi-channel engine (SEO, Paid, PR, TikTok, Events) and led a multidisciplinary team of 5, plus agency partners. Sales-Marketing Alignment: Developed lead scoring and sales collateral that shortened the feedback loop between marketing and revenue.</p>
+      <h4 style="margin-top: 28px;">Results</h4>
+      <div class="results">
+        <div><div class="num">2,000+</div><div class="lab">B2B contacts in &lt;8 months</div></div>
+        <div><div class="num">259%</div><div class="lab">YoY website traffic</div></div>
+        <div><div class="num">500+</div><div class="lab">Qualified leads, 25.7% sales-ready</div></div>
+        <div><div class="num">29 / 13</div><div class="lab">% Email open / CTR, sustained</div></div>
+        <div><div class="num">+224%</div><div class="lab">LinkedIn organic</div></div>
       </div>
+      <h4 style="margin-top: 28px;">Where the strategy lives</h4>
+      <p>The decisions that drove the numbers are upstream: which market to enter first, which agencies to hire and which to insource, which channel to over-invest in given the buyer profile, how to design lead scoring so Sales actually trusts the handoff, what content compounds in SEO vs. what burns budget on a campaign.</p>
+      <a class="ext" href="https://upterra.co/results/" target="_blank" rel="noopener">See the live results page →</a>
     </div>
   </details>
-
 </div>
-
 <!-- FOOTER -->
 <section class="sheet footer-card">
   <h2 style="margin-top: 0;">Francisca Celestino</h2>
@@ -1124,14 +1092,12 @@ a:hover { color: var(--teal-deep); }
     <span>Last updated May 2026</span>
   </div>
 </section>
-
 <script>
 (function() {
   // Filter logic: single active filter (one chip total)
   const cases = document.querySelectorAll('.case');
   const allChips = document.querySelectorAll('.chip');
   const toggleAll = document.getElementById('toggle-all');
-
   allChips.forEach(chip => {
     chip.addEventListener('click', () => {
       allChips.forEach(c => c.classList.remove('active'));
@@ -1150,7 +1116,6 @@ a:hover { color: var(--teal-deep); }
       });
     });
   });
-
   // Expand / collapse all
   let allOpen = false;
   toggleAll.addEventListener('click', () => {
@@ -1158,9 +1123,7 @@ a:hover { color: var(--teal-deep); }
     cases.forEach(c => { if (!c.hidden) c.open = allOpen; });
     toggleAll.textContent = allOpen ? 'Collapse all ↑' : 'Expand all ↓';
   });
-
 })();
 </script>
-
 </body>
 </html>
