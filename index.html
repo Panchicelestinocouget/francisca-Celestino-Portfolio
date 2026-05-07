@@ -98,19 +98,20 @@ a:hover { color: var(--teal-deep); }
   position: relative;
   z-index: 2;
 .hero h1 { 
-  color: #F0F0FF; /* Un lavanda "hielo" casi blanco, con mucho más brillo */
-  text-shadow: 0 2px 15px rgba(255, 255, 255, 0.2); /* Sombra blanca clara para separarlo del fondo */
+  color: var(--teal); /* Usa el verde agua de tus variables para el nombre */
+  text-shadow: 0 4px 20px rgba(0,0,0,0.3); /* Sombra para darle profundidad */
 }
+.hero h1 .light { font-weight: 300; display: block; letter-spacing: -0.03em; }
+.hero h1 .heavy { font-weight: 900; display: block; }
 
 .hero .lede {
-  color: #E0E0FF; /* Lavanda claro sólido, sin filtros de transparencia para que no se oscurezca */
+  color: #FFFFFF; /* Blanco puro para máxima legibilidad */
   font-size: clamp(17px, 1.6vw, 20px);
   max-width: 580px;
   margin: 28px 0 32px;
   line-height: 1.55;
-  font-weight: 500; /* Un poquito más de peso para que se lea mejor */
-  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
-}
+  font-weight: 500; /* Peso medio para que no se pierda contra el fondo vibrante */
+  text-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 .hero .meta {
   display: flex; gap: 24px; flex-wrap: wrap;
